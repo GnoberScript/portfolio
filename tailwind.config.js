@@ -8,6 +8,9 @@ export default {
         rubik: ["Rubik", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [],

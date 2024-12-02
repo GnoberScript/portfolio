@@ -5,7 +5,7 @@ const WorkExperience = () => {
       {/* Gradient background */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
         <div className="w-96 h-80">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-400 rounded-full transform blur-3xl opacity-70 "></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-400 rounded-full transform blur-3xl opacity-40 "></div>
         </div>
       </div>
 

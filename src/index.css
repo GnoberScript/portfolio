@@ -1,20 +1,27 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87); /* Light text by default */
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.87); /* Keep text light even in light mode */
     background-color: #ffffff;
-    color-scheme: light;
   }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* You might also want to add a dark scheme media query for consistency */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
   }
 }
 

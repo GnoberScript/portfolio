@@ -74,7 +74,7 @@ const WorkExperience = () => {
                     </p>{" "}
                     {/* Add this line */}
                   </div>
-                  <span className="text-gray-400 mt-2 md:mt-0">
+                  <span className="text-gray-400 mt-2 md:mt-0 text-center md:text-right">
                     {exp.duration}
                   </span>
                 </div>

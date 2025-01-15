@@ -12,20 +12,18 @@ import {
 
 const TechStack = () => {
   return (
-    <div className="container mx-auto">
-      <h2 className="text-3xl sm:text-3xl md:text-4xl font-preahvihear mb-8 sm:mb-10 md:mb-12 gradient-text text-center md:text-left">
-        Tech Stack
-      </h2>
+    <div className="container mx-auto min-h-screen ">
+      <h2 className="text-4xl font-preahvihear mb-12">Tech Stack</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
         <div className="animated-border p-[1px] rounded-2xl">
           <div className="p-6 rounded-2xl backdrop-blur-sm bg-[#090B1F]/90 h-full">
-            <p className="text-lg sm:text-xl font-medium mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 text-center md:text-left">
+            <p className="text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               Frontend
             </p>
             <div className="flex flex-wrap gap-8 items-center">
               <div className="group flex flex-col items-center gap-3 hover:-translate-y-2 transition-all duration-300">
-                <FaReact className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#61DAFB] group-hover:animate-spin-slow" />
+                <FaReact className="w-8 h-8 text-[#61DAFB] group-hover:animate-spin-slow" />
                 <span className="text-sm opacity-70 group-hover:opacity-100">
                   React
                 </span>
@@ -72,7 +70,7 @@ const TechStack = () => {
 
         <div className="animated-border p-[1px] rounded-2xl">
           <div className="p-6 rounded-2xl backdrop-blur-sm bg-[#090B1F]/90 h-full">
-            <p className="text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400 text-center md:text-left">
+            <p className="text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400">
               Backend
             </p>
             <div className="flex flex-wrap gap-8 items-center">
@@ -94,7 +92,7 @@ const TechStack = () => {
 
         <div className="animated-border p-[1px] rounded-2xl">
           <div className="p-6 rounded-2xl backdrop-blur-sm bg-[#090B1F]/90 h-full">
-            <p className="text-center md:text-left text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+            <p className="text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
               Database
             </p>
             <div className="flex flex-wrap gap-8 items-center">
@@ -110,7 +108,7 @@ const TechStack = () => {
 
         <div className="animated-border p-[1px] rounded-2xl">
           <div className="p-6 rounded-2xl backdrop-blur-sm bg-[#090B1F]/90 h-full">
-            <p className="text-center md:text-left text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
+            <p className="text-xl font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-400">
               Design Tool
             </p>
             <div className="flex flex-wrap gap-8 items-center">

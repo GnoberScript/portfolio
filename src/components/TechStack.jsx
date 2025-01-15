@@ -13,7 +13,9 @@ import {
 const TechStack = () => {
   return (
     <div className="container mx-auto  ">
-      <h2 className="text-4xl font-preahvihear mb-12">Tech Stack</h2>
+      <h2 className="text-4xl font-preahvihear mb-12 gradient-text">
+        Tech Stack
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
         <div className="animated-border p-[1px] rounded-2xl">

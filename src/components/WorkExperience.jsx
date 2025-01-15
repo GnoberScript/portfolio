@@ -72,7 +72,6 @@ const WorkExperience = () => {
                     <p className="text-gray-400 text-sm text-center md:text-left">
                       {exp.company}
                     </p>{" "}
-                    {/* Add this line */}
                   </div>
                   <span className="text-gray-400 mt-2 md:mt-0 text-center md:text-right">
                     {exp.duration}

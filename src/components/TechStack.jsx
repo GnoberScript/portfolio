@@ -12,7 +12,7 @@ import {
 
 const TechStack = () => {
   return (
-    <div className="container mx-auto min-h-screen ">
+    <div className="container mx-auto  ">
       <h2 className="text-4xl font-preahvihear mb-12">Tech Stack</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">

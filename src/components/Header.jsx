@@ -26,7 +26,7 @@ const Header = () => {
           <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-preahvihear text-center md:text-left">
             Benjamin Joshua N. Rebong
           </h2>
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left text-[28px] sm:text-[32px] md:text-[36px] font-preahvihear">
             <TypeAnimation
               sequence={[
                 "a Software Engineer",

@@ -13,7 +13,7 @@ import {
 const TechStack = () => {
   return (
     <div className="container mx-auto  ">
-      <h2 className="text-4xl font-preahvihear mb-12 gradient-text">
+      <h2 className="text-4xl font-preahvihear mb-12 gradient-text text-center md:text-left">
         Tech Stack
       </h2>
 

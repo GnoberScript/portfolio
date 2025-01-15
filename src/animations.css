@@ -1,0 +1,76 @@
+/* Modern gradient animations */
+.animated-border {
+  background: linear-gradient(
+    90deg,
+    #3b82f6 0%,
+    #2563eb 25%,
+    #1d4ed8 50%,
+    #2563eb 75%,
+    #3b82f6 100%
+  );
+  background-size: 200% auto;
+  animation: shine 20s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Text gradient */
+.gradient-text {
+  background: linear-gradient(to right, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass effect */
+.glass-effect {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(9, 11, 31, 0.75);
+}
+
+/* Smooth hover transitions */
+.smooth-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

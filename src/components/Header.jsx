@@ -46,7 +46,7 @@ const Header = () => {
         <div className="text-[14px] space-y-4 max-w-lg text-center md:text-justify">
           <p>
             A full stack engineer with strong proficiency in frontend
-            development, I make meaningful and efficient web applications that
+            development. I make meaningful and efficient web applications that
             provide great services.
           </p>
           <p>

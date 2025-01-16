@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import profilepicture from "../assets/profilepicture.jpg";
-import SocialLinks from "./SocialLinks";
+import profile from "../assets/profile.png";
 
 const Header = () => {
   return (
@@ -10,7 +9,7 @@ const Header = () => {
         <div className="relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[280px] md:h-[280px]">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-900 blur-sm rounded-2xl rotate-6 transform transition-transform hover:rotate-12 duration-300"></div>
           <img
-            src={profilepicture}
+            src={profile}
             alt="Benjamin Joshua N. Rebong"
             className="absolute inset-0 w-full h-full object-cover rounded-2xl z-10 "
           />

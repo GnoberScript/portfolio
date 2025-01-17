@@ -1,0 +1,41 @@
+/* Modern background and parallax effects */
+.parallax-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-pattern {
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.15) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, rgba(59, 130, 246, 0.15) 2%, transparent 0%);
+  background-size: 100px 100px;
+  animation: patternMove 20s linear infinite;
+}
+
+.bg-gradient {
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(29, 78, 216, 0.3) 0%, transparent 50%);
+  filter: blur(80px);
+  opacity: 0.7;
+}
+
+@keyframes patternMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+.parallax-item {
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform 0.1s linear;
+}

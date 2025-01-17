@@ -3,7 +3,7 @@ import React from "react";
 const WorkExperience = () => {
   const experiences = [
     {
-      title: "Our School's Website",
+      title: "AMA-Computer College's Website",
       company: "AMA-Computer College",
       role: "Lead Developer",
       duration: "2023 - Present",
@@ -20,7 +20,7 @@ const WorkExperience = () => {
       title: "Applicant Tracking System",
       company: "GlobalTek BPO Inc.",
       role: "Lead Developer",
-      duration: "2024 - 2025",
+      duration: "2024 - Present",
       description:
         "Serves as a helping tool for the HR, hiring manager, and recruiter.",
       technologies: [

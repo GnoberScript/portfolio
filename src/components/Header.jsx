@@ -1,62 +1,44 @@
-import { TypeAnimation } from "react-type-animation";
-import profile from "../assets/profile.png";
+import { useState, useEffect } from "react";
+import NavLinks from "./NavLinks";
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
-      {/* Image container with modern styling */}
-      <div className="flex-shrink-0">
-        <div className="relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[280px] md:h-[280px]">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-900 blur-sm rounded-2xl rotate-6 transform transition-transform hover:rotate-12 duration-300"></div>
-          <img
-            src={profile}
-            alt="Benjamin Joshua N. Rebong"
-            className="absolute inset-0 w-full h-full object-cover rounded-2xl z-10 "
-          />
-        </div>
-      </div>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50  dark:bg-slate-900 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm transition-transform duration-300 ease-in-out ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      } header-shadow`}
+    >
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a
+          href="#"
+          className="text-xl font-preahvihear font-semibold text-blue-500"
+        >
+          {"< GnoberScript / >"}
+        </a>
 
-      {/* Existing text content */}
-      <div className="flex-1">
-        <div className="mb-12">
-          <h4 className="text-[20px] sm:text-[22px] md:text-[24px] font-preahvihear text-blue-400 text-center md:text-left">
-            Hello! I am
-          </h4>
-          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-preahvihear text-center md:text-left">
-            Benjamin Joshua N. Rebong
-          </h2>
-          <div className="text-center md:text-left text-[28px] sm:text-[32px] md:text-[36px] font-preahvihear">
-            <TypeAnimation
-              sequence={[
-                "a Software Engineer",
-                1000,
-                "a UI/UX Designer",
-                1000,
-                "a Frontend Developer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={40}
-              repeat={Infinity}
-            />
-          </div>
-        </div>
-
-        <div className="text-[14px] space-y-4 max-w-lg text-center md:text-justify">
-          <p>
-            A full stack engineer with strong proficiency in frontend
-            development. I make meaningful and efficient web applications that
-            provide great services.
-          </p>
-          <p>
-            During my time in college, I had the opportunity to lead my batch in
-            many projects. I was also entrusted with creating my school&apos;s
-            website, a project that I&apos;m proud of, and that reflects my
-            commitment in using technology to make a positive impact.
-          </p>
-        </div>
+        <NavLinks />
       </div>
-    </div>
+    </header>
   );
 };
 

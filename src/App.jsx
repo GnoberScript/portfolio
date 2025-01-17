@@ -5,23 +5,34 @@ import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#090B1F] text-white">
+    <div className="min-h-screen bg-[#090B1F] text-white">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-14">
         <Header />
+        <div id="about">
+          <Hero />
+        </div>
+
         <div className="mt-14">
-          <WorkExperience />
+          <div id="experience">
+            <WorkExperience />
+          </div>
         </div>
         <div className="mt-14">
-          <TechStack />
+          <div id="tech">
+            <TechStack />
+          </div>
         </div>
         <div className="mt-14">
           <Projects />
         </div>
         <div className="mt-14">
-          <Contact />
+          <div id="certificates">
+            <certificates />
+          </div>
         </div>
         <Footer />
       </div>

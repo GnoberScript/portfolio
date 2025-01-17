@@ -1,0 +1,38 @@
+/* Theme variables for navigation */
+:root {
+  --nav-bg: rgba(15, 23, 42, 0.8);
+  --nav-border: rgba(255, 255, 255, 0.1);
+  --nav-link-hover: #60a5fa;
+  --nav-shadow: rgba(0, 0, 0, 0.1);
+  --nav-gradient-start: #3b82f6;
+  --nav-gradient-end: #2563eb;
+}
+
+.dark {
+  --nav-bg: rgba(15, 23, 42, 0.95);
+  --nav-border: rgba(255, 255, 255, 0.05);
+  --nav-link-hover: #93c5fd;
+  --nav-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Apply theme to components */
+.nav-link {
+  color: var(--nav-link-hover);
+}
+
+.mobile-nav {
+  isolation: isolate;
+  background: var(--nav-bg);
+  margin: 0.5rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  border-color: var(--nav-border);
+  box-shadow: 0 4px 6px -1px var(--nav-shadow);
+}
+
+.nav-link::before {
+  background: linear-gradient(90deg, 
+    var(--nav-gradient-start),
+    var(--nav-gradient-end)
+  );
+}

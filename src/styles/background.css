@@ -1,14 +1,4 @@
-/* Modern background and parallax effects */
-.parallax-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
-
+/* Modern background effects with enhanced visual elements */
 .bg-pattern {
   background-image: 
     radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.15) 2%, transparent 0%),
@@ -23,6 +13,34 @@
     radial-gradient(circle at 100% 100%, rgba(29, 78, 216, 0.3) 0%, transparent 50%);
   filter: blur(80px);
   opacity: 0.7;
+}
+
+/* Animated floating blobs */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
 
 @keyframes patternMove {

@@ -8,7 +8,7 @@ const WorkExperience = () => {
       role: "Lead Developer",
       duration: "2023 - Present",
       description:
-        "Led the development of the school's official website using modern web technologies and best practices.",
+        "Lead the development of the school's official website using modern web technologies and best practices.",
       technologies: ["React", "JavaScript", "TailwindCSS", "HTML"],
       achievements: [
         "Created a user-friendly front page for school inquiries",
@@ -35,6 +35,20 @@ const WorkExperience = () => {
         "Developed HR management interface",
         "Implemented applicant tracking functionality",
         "Created a user-friendly hiring process workflow",
+      ],
+    },
+    {
+      title: "Little Law, P.A. Website",
+      company: "Little Law, P.A.",
+      role: "Lead Developer",
+      duration: "2022 - 2023",
+      description:
+        "Serves as a helping tool for the attorney and their clients. Offers communication and quick access to critical legal services.",
+      technologies: ["React", "Node.js", "JavaScript", "CSS"],
+      achievements: [
+        "Streamlined attorney-client communication",
+        "Enabled quick access to legal services",
+        "Boosted client acquisition for attorneys",
       ],
     },
   ];
